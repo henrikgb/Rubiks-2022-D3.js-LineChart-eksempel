@@ -13,7 +13,7 @@ body{
 	border-radius: 5px;
 	margin: 0;
 }
-.dataSetPicker {
+.data-set-picker {
 	position: relative;
 	top: 59px;
 	left: 280px;
@@ -31,7 +31,7 @@ body{
 	fill: transparent;
 	cursor: pointer;
 }
-.lineChartTooltip {
+.line-chart-tooltip {
 	position: absolute;
 	height: auto;
 	width: 175px;
@@ -44,7 +44,7 @@ body{
 	padding: 11px;
 	font-size: 14px;
 }
-.lineChartTooltip:before {
+.line-chart-tooltip:before {
 	box-sizing: border-box;
 	display: inline;
 	width: 100%;

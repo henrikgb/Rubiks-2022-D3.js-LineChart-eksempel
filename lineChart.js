@@ -226,7 +226,7 @@ class lineChart {
 
         // Append a div which represents tooltip box with information.
         this.toolTipDiv = d3.select('body').append("rect")
-            .attr("class", "lineChartTooltip")
+            .attr("class", "line-chart-tooltip")
             .style("opacity", 0)
 
 
@@ -259,7 +259,7 @@ class lineChart {
                 .style("opacity", 1);
 
             // Create the tooltip-div with data point information: 
-            $this.tooltipDiv = d3.select(".lineChartTooltip");
+            $this.tooltipDiv = d3.select(".line-chart-tooltip");
             $this.tooltipDiv.style("opacity", 1)
             let formatDate = d3.timeFormat("%B %A %-d, %Y");
             $this.tooltipDiv.html(formatDate(closestXValue) + "</br>"
@@ -274,7 +274,7 @@ class lineChart {
             //console.log('Mouse leaves')
 
             // Hide tool tip when hovering outside the line chart area:
-            $this.tooltipDiv = d3.select(".lineChartTooltip");
+            $this.tooltipDiv = d3.select(".line-chart-tooltip");
             $this.tooltipDiv.style("opacity", 0);
             $this.tooltipCircle.style("opacity", 0);
             $this.xAxisLine.style('opacity', 0)
