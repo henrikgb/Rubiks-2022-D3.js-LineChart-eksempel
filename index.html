@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Line Chart in D3.js</title>
+    <title>Line chart in D3.js</title>
 
-    <!-- LINK TO STYLESHEET-->
+    <!-- Link to css stylesheet -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-
 </head>
 <body>
-    
-    <!-- DIV TO CONTAIN CHART-->
+    <!-- div intended to contain chart -->
     <div id="chart" class="chart">
+        <!-- Dropdownmenu intended to select dataset-->
         <select id="dropdownmenu" class="data-set-picker"></select>
     </div>
 
-    <!-- DUMMY DATA: Temperature and rainfall in Stavanger 2021 -->
-    <script src="dummyData.js"></script>
+    <!-- Dummy data of temperature and rainfall in Stavanger 2021 -->
+    <script src="DummyData.js"></script>
 
-    <!-- Load d3.js -->
+    <!-- Load d3.js library -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
-    <!-- LINK TO JAVASCRIPT -->
-    <script src="lineChart.js"></script>
+    <!-- Link to JavaScript -->
+    <script src="LineChart.js"></script>
 
-
-    <!-- CREATE OBJECT -->
+    <!-- Create LineChart object -->
     <script>
-        const myLineChart = new lineChart({
-            chartTitle: 'Klimarapport - Stavanger 2021',
+        const MyLineChart = new LineChart({
+            chartTitle: 'Climate report - Stavanger 2021',
             svgWidth: 900,
             svgHeight: 500,
             data: temperature,
@@ -41,7 +39,5 @@
             chartMargin: {top: 140, right: 100, bottom: 100, left: 100}
         })
     </script>
-    
-
 </body>
 </html>

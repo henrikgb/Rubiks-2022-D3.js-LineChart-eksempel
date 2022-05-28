@@ -1,4 +1,4 @@
-class lineChart {
+class LineChart {
     constructor(obj) {
         this.chartTitle = obj.chartTitle;
         this.svgWidth = obj.svgWidth;
@@ -7,19 +7,23 @@ class lineChart {
         this.dataset = obj.dataset;
         this.chartMargin = obj.chartMargin;
 
+        // The drawChart() method builds the line chart
         this.drawChart();
+
+        // The appendDropdownMenu() and updateData() methods updates the dataset that's visualized in the line chart
         this.appendDropdownMenu();
         this.updateData();
     }
 
     drawChart(){
-        // Remove previous created svg elements inside DIV:
+        // Remove previous created svg elements:
         d3.select('#chart').select('svg').remove();
         
-        // Select DIV with id "#chart", and append svg inside the DIV:
+        // Select div with id "#chart", and append a svg element inside of it:
         this.svg = d3.select('#chart')
             .append('svg')
             .attr('class', 'chart')
+            //.attr("viewBox", "0 0 " + this.svgWidth + " " + this.svgHeight)
             .attr('width', this.svgWidth)
             .attr('height', this.svgHeight);
 
@@ -40,15 +44,14 @@ class lineChart {
             .attr('fill', 'yellow');
         */
 
+        // Utilize the other methods to step by step build the line chart:
         this.appendTitle();
         this.appendLabelText();
-
         this.defineAccessor();
         this.createScales();
         this.createGrid();
         this.createAxes();
         this.joinData();
-
         this.mouseevent();
     }
 
@@ -76,32 +79,25 @@ class lineChart {
     }
 
     defineAccessor(){
-        // JavaScript accessors (getters) to get data from dataset
         this.yAccessor = (d) => d.value;
         this.dateParser = d3.timeParse("%d/%m/%Y");
         this.xAccessor = (d) => this.dateParser(d.date);
     }
 
     createScales(){
-        // Create a linear scale, and pass in domain values and range values
         this.yScale = d3.scaleLinear()
             .domain([Math.min(0, d3.min(this.data, this.yAccessor)), d3.max(this.data, this.yAccessor)])
             .range([this.graphHeight, 0]);
 
-        // Create a time scale, and pass in domain values and range values
         this.xScale = d3.scaleTime()
             .domain(d3.extent(this.data, this.xAccessor))
             .range([0, this.graphWidth])
     }
 
     createGrid(){
-        // Create horizontal lines
         this.makeYLines = () => d3.axisLeft().scale(this.yScale)
-
-        // Create vertical lines
         this.makeXLines = () => d3.axisBottom().scale(this.xScale)
 
-        // Call Horizontal lines
         this.graphCanvas.append('g')
             .attr('class', 'grid')
             .call(this.makeYLines()
@@ -111,7 +107,6 @@ class lineChart {
             .style('stroke-opacity', this.gridOpacity)
             .attr('stroke-width', 0.8)
 
-        // Call Vertical lines
         this.graphCanvas.append('g')
             .attr('class', 'grid')
             .call(this.makeXLines()
@@ -123,30 +118,23 @@ class lineChart {
     }
 
     createAxes(){
-        // Append group elements to graphCanvas for the axes
         this.xAxisGroup = this.graphCanvas.append('g')
         this.yAxisGroup = this.graphCanvas.append('g')
         
-        // Create the axes
         this.xAxis = d3.axisBottom(this.xScale)
         this.yAxis = d3.axisLeft(this.yScale) 
 
-        // Call the axes inside the axisGroups
         this.xAxisGroup.call(this.xAxis)
         this.yAxisGroup.call(this.yAxis) 
         
-        // Give opacity to xAxis, and translate the location of the xAxis to be the bottom of the graph
         this.xAxisGroup
             .attr('stroke-width', 0.6)
             .attr('font-size', 14)
             .attr('transform', `translate(0, ${this.graphHeight})`) 
 
-        // Set stroke opacity to 0 for yAxis in order to hide axis stroke
-       this.yAxisGroup
+        this.yAxisGroup
             .attr('font-size', 14)
             .attr('stroke-opacity', 0); 
-
-        // Rotate the text on x-axis
         this.xAxisGroup.selectAll('text')
             .attr('transform', 'rotate(-65)')
             .style('text-anchor', 'end')
@@ -155,14 +143,11 @@ class lineChart {
     }
 
     joinData(){
-        // Create function "lineGenerator" to convert datapoints into X and Y value
         this.lineGenerator = d3.line()
             .x((d) => this.xScale(this.xAccessor(d)))
             .y((d) => this.yScale(this.yAccessor(d)))
-            .curve(d3.curveMonotoneX);  // d3.curveMonotoneX generates a curve in the line based on the cubic splines.
+            .curve(d3.curveMonotoneX);  
 
-        // Append path-element to the g-element graphCanvas, 
-        // and utilize the function "lineGenerator" to convert the dataset to a line
         this.line = this.graphCanvas
             .append("path")
             .attr("d", this.lineGenerator(this.data))
@@ -176,11 +161,11 @@ class lineChart {
         d3.select('#dropdownmenu')
             .append("option")
             .attr("value", "temperature")
-            .text("Temperatur");
+            .text("Temperature");
         d3.select('#dropdownmenu')
             .append("option")
             .attr("value", "rainfall")
-            .text("Nedbør");
+            .text("Rainfall");
     }
 
     updateData(){
@@ -194,8 +179,7 @@ class lineChart {
     }
 
     mouseevent() {
-
-        // Append listening-rectangle
+        // Append listening-rectangle to listen on movements of the mouse position
         this.listeningRect = this.graphCanvas
             .append("rect")
             .attr("class", "listening-rect")
@@ -204,7 +188,7 @@ class lineChart {
             .on('mousemove', onMouseMove)
             .on("mouseleave", onMouseLeave)
 
-        // Append a vertical line to the g-element graphCanvas
+        // Append a vertical line to visualize data point positions
         this.xAxisLine = this.graphCanvas
             .append("g")
             .append("rect")
@@ -215,7 +199,7 @@ class lineChart {
             .attr("width", ".5px")
             .attr("height", this.graphHeight);
 
-        // Append a circle to g-element graphCanvas
+        // Append a circle to visualize data point positions
         this.tooltipCircle = this.graphCanvas
             .append("circle")
             .attr("r", 7)
@@ -224,7 +208,7 @@ class lineChart {
             .attr("stroke-width", 2)
             .style("opacity", 0);
 
-        // Append a div which represents tooltip box with information.
+        // Append a tooltip box with information about the data points
         this.toolTipDiv = d3.select('body').append("rect")
             .attr("class", "line-chart-tooltip")
             .style("opacity", 0)
@@ -249,7 +233,7 @@ class lineChart {
             // console.log("Closest Y Value: " + closestYValue)
 
 
-            // Create tooltip-circle and axis-line, to follow the mouse pointer, and to better visualize the data point position
+            // Create tooltip-circle and axis-line, to follow the mouse pointer, and to visualize the data point positions
             $this.xAxisLine
                 .attr("x", $this.xScale(closestXValue))
                 .style('opacity', 1)

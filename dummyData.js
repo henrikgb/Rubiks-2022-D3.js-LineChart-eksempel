@@ -5,7 +5,7 @@ const temperature = [
         "minValue": -2,
         "maxValue": 3,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "11/01/2021",
@@ -13,7 +13,7 @@ const temperature = [
         "minValue": -4,
         "maxValue": -1,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "18/01/2021",
@@ -21,7 +21,7 @@ const temperature = [
         "minValue": -3,
         "maxValue": 0,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "25/01/2021",
@@ -29,7 +29,7 @@ const temperature = [
         "minValue": 3,
         "maxValue": 5,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "01/02/2021",
@@ -37,7 +37,7 @@ const temperature = [
         "minValue": -2,
         "maxValue": 0,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "08/02/2021",
@@ -45,7 +45,7 @@ const temperature = [
         "minValue": -8,
         "maxValue": -2,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "15/02/2021",
@@ -53,7 +53,7 @@ const temperature = [
         "minValue": -8,
         "maxValue": -3,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "22/02/2021",
@@ -61,7 +61,7 @@ const temperature = [
         "minValue": 4,
         "maxValue": 12,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "01/03/2021",
@@ -69,7 +69,7 @@ const temperature = [
         "minValue": 0,
         "maxValue": 7,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "08/03/2021",
@@ -77,7 +77,7 @@ const temperature = [
         "minValue": 3,
         "maxValue": 7,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "15/03/2021",
@@ -85,7 +85,7 @@ const temperature = [
         "minValue": 0,
         "maxValue": 8,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "22/03/2021",
@@ -93,7 +93,7 @@ const temperature = [
         "minValue": 4,
         "maxValue": 8,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "29/03/2021",
@@ -101,7 +101,7 @@ const temperature = [
         "minValue": 7,
         "maxValue": 9,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "05/04/2021",
@@ -109,7 +109,7 @@ const temperature = [
         "minValue": 0,
         "maxValue": 7,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "12/04/2021",
@@ -117,7 +117,7 @@ const temperature = [
         "minValue": -1,
         "maxValue": 5,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "19/04/2021",
@@ -125,7 +125,7 @@ const temperature = [
         "minValue": 4,
         "maxValue": 17,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "26/04/2021",
@@ -133,7 +133,7 @@ const temperature = [
         "minValue": 3,
         "maxValue": 12,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "03/05/2021",
@@ -141,7 +141,7 @@ const temperature = [
         "minValue": 2,
         "maxValue": 12,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "10/05/2021",
@@ -149,7 +149,7 @@ const temperature = [
         "minValue": 7,
         "maxValue": 18,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "17/05/2021",
@@ -157,7 +157,7 @@ const temperature = [
         "minValue": 5,
         "maxValue": 12,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "24/05/2021",
@@ -165,7 +165,7 @@ const temperature = [
         "minValue": 8,
         "maxValue": 19,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "07/06/2021",
@@ -173,7 +173,7 @@ const temperature = [
         "minValue": 13,
         "maxValue": 22,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "14/06/2021",
@@ -181,7 +181,7 @@ const temperature = [
         "minValue": 8,
         "maxValue": 15,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "21/06/2021",
@@ -189,7 +189,7 @@ const temperature = [
         "minValue": 9,
         "maxValue": 20,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "28/06/2021",
@@ -197,7 +197,7 @@ const temperature = [
         "minValue": 14,
         "maxValue": 24,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "05/07/2021",
@@ -205,7 +205,7 @@ const temperature = [
         "minValue": 14,
         "maxValue": 28,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "12/07/2021",
@@ -213,7 +213,7 @@ const temperature = [
         "minValue": 14,
         "maxValue": 26,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "19/07/2021",
@@ -221,7 +221,7 @@ const temperature = [
         "minValue": 10,
         "maxValue": 18,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "26/07/2021",
@@ -229,7 +229,7 @@ const temperature = [
         "minValue": 18,
         "maxValue": 28,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "02/08/2021",
@@ -237,7 +237,7 @@ const temperature = [
         "minValue": 8,
         "maxValue": 16,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "09/08/2021",
@@ -245,7 +245,7 @@ const temperature = [
         "minValue": 16,
         "maxValue": 23,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "16/08/2021",
@@ -253,7 +253,7 @@ const temperature = [
         "minValue": 12,
         "maxValue": 17,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "23/08/2021",
@@ -261,7 +261,7 @@ const temperature = [
         "minValue": 11,
         "maxValue": 17,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "30/08/2021",
@@ -269,7 +269,7 @@ const temperature = [
         "minValue": 10,
         "maxValue": 15,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "06/09/2021",
@@ -277,7 +277,7 @@ const temperature = [
         "minValue": 10,
         "maxValue": 15,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "13/09/2021",
@@ -285,7 +285,7 @@ const temperature = [
         "minValue": 12,
         "maxValue": 20,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "20/09/2021",
@@ -293,7 +293,7 @@ const temperature = [
         "minValue": 8,
         "maxValue": 16,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "27/09/2021",
@@ -301,7 +301,7 @@ const temperature = [
         "minValue": 9,
         "maxValue": 18,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "04/10/2021",
@@ -309,7 +309,7 @@ const temperature = [
         "minValue": 9,
         "maxValue": 18,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "11/10/2021",
@@ -317,7 +317,7 @@ const temperature = [
         "minValue": 4,
         "maxValue": 10,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "18/10/2021",
@@ -325,7 +325,7 @@ const temperature = [
         "minValue": 4,
         "maxValue": 10,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "25/10/2021",
@@ -333,7 +333,7 @@ const temperature = [
         "minValue": 5,
         "maxValue": 10,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "01/11/2021",
@@ -341,7 +341,7 @@ const temperature = [
         "minValue": 4,
         "maxValue": 10,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "08/11/2021",
@@ -349,7 +349,7 @@ const temperature = [
         "minValue": 4,
         "maxValue": 10,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "15/11/2021",
@@ -357,7 +357,7 @@ const temperature = [
         "minValue": 4,
         "maxValue": 10,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "22/11/2021",
@@ -365,7 +365,7 @@ const temperature = [
         "minValue": 1,
         "maxValue": 5,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "29/11/2021",
@@ -373,7 +373,7 @@ const temperature = [
         "minValue": -4,
         "maxValue": 4,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "06/12/2021",
@@ -381,7 +381,7 @@ const temperature = [
         "minValue": -4,
         "maxValue": 3,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "13/12/2021",
@@ -389,7 +389,7 @@ const temperature = [
         "minValue": 1,
         "maxValue": 6,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "20/12/2021",
@@ -397,7 +397,7 @@ const temperature = [
         "minValue": -5,
         "maxValue": 0,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     },
     {
         "date": "31/12/2021",
@@ -405,7 +405,7 @@ const temperature = [
         "minValue": 2,
         "maxValue": 6,
         "unit": "deg C",
-        "description": "Temperatur"
+        "description": "Temperature"
     }
 ]
 const rainfall = [
@@ -415,7 +415,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/02/2021",
@@ -423,7 +423,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/03/2021",
@@ -431,7 +431,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/04/2021",
@@ -439,7 +439,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/05/2021",
@@ -447,7 +447,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/06/2021",
@@ -455,7 +455,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/07/2021",
@@ -463,7 +463,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/08/2021",
@@ -471,7 +471,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/09/2021",
@@ -479,7 +479,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/10/2021",
@@ -487,7 +487,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/11/2021",
@@ -495,7 +495,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "01/12/2021",
@@ -503,7 +503,7 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     },
     {
         "date": "31/12/2021",
@@ -511,6 +511,6 @@ const rainfall = [
         "minValue": 0,
         "maxValue": 250,
         "unit": "mm",
-        "description": "Nedbør"
+        "description": "Rainfall"
     }
 ]
