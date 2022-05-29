@@ -3,15 +3,15 @@ This repository is intended to show how to build a simple line chart using D3.js
 and was created in connection with a lecture at the Rubiks 2022 festival. 
 
 ## Code description
-- index.html is a simple html file utilized to host the line chart. 
+- DummyData.js contains dummy data as JavaScript objects which will be visualized in the line chart.
+- Stylesheet.css contains css classes utilized to style the line chart. 
+- LineChart.js is a JavaScript class utilized to build the line chart. 
+- Index.html is a simple html file utilized to host the line chart. 
   - Inside the head there is a link to the css stylesheet. 
   - Inside the body there is: 
     - a div created to contain the line chart, and inside this div there is a select element intended to work as a dropdown menu,
     - there is a link to DummyData.js, LineChart.js, and to the d3.js library, 
     - and there is a JavaScript object created of the LineChart.js class. 
-- DummyData.js contains dummy data as JavaScript objects which will be visualized in the line chart.
-- stylesheet.css contains css classes utilized to style the line chart. 
-- LineChart.js is a JavaScript class utilized to build the line chart. 
 
 ## Description of LineChart.js
 LineChart.js is a JavaScript class utilized to build the line chart. 
