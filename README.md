@@ -34,3 +34,8 @@ are utilized to update the dataset that's visualized in the line chart:
 - The updateData() method listen for changes in the dropdown menu. When the value in the dropdown menu changes, 
 a temporary variable is created. The temporary variable represent one of the JavaScript objects in the DummyData.js file, 
 and will be utilized as input data in the drawChart() method that will be re-triggered. 
+
+## Credits
+Parts of the code is inspired by the following blog articles: 
+- https://vizartpandey.com/creating-simple-line-charts-using-d3-js-part-01/
+- https://vizartpandey.com/line-chart-how-to-show-data-on-mouseover-using-d3-js/
