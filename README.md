@@ -39,3 +39,6 @@ and will be utilized as input data in the drawChart() method that will be re-tri
 Parts of the code is inspired by the following blog articles: 
 - https://vizartpandey.com/creating-simple-line-charts-using-d3-js-part-01/
 - https://vizartpandey.com/line-chart-how-to-show-data-on-mouseover-using-d3-js/
+
+The updateData() method is inspired by "Section 6: The D3 update pattern" in the Udemy course 
+"Build Data Visualizations with D3.js & Firebase."
