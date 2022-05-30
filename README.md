@@ -23,7 +23,7 @@ build the line chart:
   - The appendLabelText() method appends a label text to the y-axis. 
   - the defineAccessor() method creates JavaScript accessors utilized as getters of dummy data in other methods.
   - The createScales() method creates scales for the y- and x-axis by defining range and domain.
-  - The createGrid() method creates a grid that improved data visualization in the line chart. 
+  - The createGrid() method creates a grid that improves data visualization in the line chart. 
   - The createAxes() creates the y- and x-axis.
   - The joinData() method joins the dummy data to the line chart. 
   - The mouseevent() method creates a tooltip function to visualize the various data points when hovering the mouse over the line chart.
